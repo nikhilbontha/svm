@@ -10,7 +10,6 @@ from sklearn.metrics import mean_squared_error, r2_score
 # Title
 st.title("Electric Car Price Prediction using SVR")
 
-
     # Load Dataset
     df = pd.read_csv("ElectricCarData_Clean (1).csv")
 
