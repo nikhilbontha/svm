@@ -10,12 +10,9 @@ from sklearn.metrics import mean_squared_error, r2_score
 # Title
 st.title("Electric Car Price Prediction using SVR")
 
-# Upload CSV File
-uploaded_file = st.file_uploader("Upload  Dataset CSV", type=["csv"])
 
-if uploaded_file is not None:
     # Load Dataset
-    df = pd.read_csv(uploaded_file)
+    df = pd.read_csv("ElectricCarData_Clean (1).csv")
 
     st.subheader("Dataset Preview")
     st.write(df.head())
